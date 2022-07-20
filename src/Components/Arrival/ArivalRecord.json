@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "Airline": "Air Canada",
+        "Flight":"AC279",
+        "Cities":"Vancouver",
+        "Arrival Time":"11:20 PM",
+        "Status":"Arrived"
+    },
+    {
+        "id": 2,
+        "Airline": "Air North",
+        "Flight":"4N534",
+        "Cities":"Vancouver",
+        "Arrival Time":"11:35 AM",
+        "Status":"Arrived"
+    },
+    {
+        "id": 3,
+        "Airline": "Condor Airlines",
+        "Flight":"DE2426",
+        "Cities":"Frankfurt",
+        "Arrival Time":"12:30 PM",
+        "Status":"Arrived"
+    },
+    {
+        "id": 4,
+        "Airline": "Air North",
+        "Flight":"4N702",
+        "Cities":"Edmonton",
+        "Arrival Time":"2:00 PM",
+        "Status":"Arrived"
+    },
+    {
+        "id": 5,
+        "Airline": "Air Canada",
+        "Flight":"AC8099",
+        "Cities":"Vancouver",
+        "Arrival Time":"6:20 PM",
+        "Status":"Arrived"
+    }
+
+
+]
