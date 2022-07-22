@@ -2,7 +2,9 @@ import React from 'react'
 
 import SearchButton from '../Button/SearchButton';
 import ArrivalFligtsTable from '../Arrival/Arrival';
-import Departure from '../Departures/Departure';
+import ToogleButton from '../Button/ToogleButton';
+
+
 
 const SearchPage= () => {
   return (
@@ -12,8 +14,8 @@ const SearchPage= () => {
 <SearchButton/>
 <span style={{marginRight:24,fontSize:12}}>Airports & Areodomes</span>
 <span style={{fontSize:12}}>Bussiness</span>
-
-<ArrivalFligtsTable/>
+<ToogleButton/>
+<ArrivalFligtsTable />
 
       </div>
     
