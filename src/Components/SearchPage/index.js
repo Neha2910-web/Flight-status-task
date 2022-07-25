@@ -27,6 +27,6 @@ const style = {
         backgroundColor: "#d8d4d4",
         padding: 20,
         margin: "auto",
-        width: 720,
+        width: 750,
     }
 }

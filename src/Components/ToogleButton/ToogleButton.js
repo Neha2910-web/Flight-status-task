@@ -13,34 +13,38 @@ const ToogleButton = () => {
       <ToggleButton
         onClick={() => setShow(true)}
         style={{
-          backgroundColor: "#a0a0f6",
-          color: "black",
+          padding: 4,
+        marginLeft:14,
+          color: "#07c7e4",
           fontWeight: "bold",
         }}
       >
-        Arrival
+        ARRIVALS
         <FlightLandIcon />
       </ToggleButton>
       <ToggleButton onClick={() => setShow(false)}
       style={{
-        backgroundColor: "#a0a0f6",
-        color: "black",
+        
+        color: "#07c7e4",
         fontWeight: "bold",
+        padding: 4,
+        marginLeft:14
       }}>
-        Departure
+        DEPARTURES
         <FlightTakeoffIcon />
       </ToggleButton>
       <span
         style={{
           float: "right",
           fontWeight: "bolder",
-          paddingTop: 24,
+          paddingTop: 13,
           fontSize: 11,
         }}
       >
         view all flights
         <ArrowForwardIcon style={{ fontSize: "Small" }} />
       </span>
+      <p style={{fontSize:8,marginLeft:12}}>updated july21,2022 at 11:00 pm </p>
 
       {show ? <ArrivalFligtsData /> : <Departure />}
     </div>
