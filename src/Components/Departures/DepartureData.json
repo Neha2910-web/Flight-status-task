@@ -1,0 +1,212 @@
+{
+    "flights": {
+      "date": "July 24, 2022",
+      "time": "11:45 PM",
+      "Departure": [
+        {
+          "Carrier": "Air Canada",
+          "Flight": "AC276",
+          "CitiesIATA": "YVR",
+          "Cities": "Vancouver",
+          "TempCel": "18.399999999999999 C",
+          "SchedTime": "06:00 AM",
+          "SchedDate": "2022-07-24",
+          "RevisedTime": "06:15 AM",
+          "Status": "Departed",
+          "Gate": 4
+        },
+        {
+          "Carrier": "Air North",
+          "Flight": "4N511",
+          "CitiesIATA": "YVR,YYJ",
+          "Cities": "Vancouver,Victoria",
+          "TempCel": "18.399999999999999 C",
+          "SchedTime": "07:00 AM",
+          "SchedDate": "2022-07-24",
+          "RevisedTime": "07:00 AM",
+          "Status": "Departed",
+          "Gate": ""
+        },
+        {
+          "Carrier": "Air North",
+          "Flight": "4N323",
+          "CitiesIATA": "YDA,YOC,YEV",
+          "Cities": "Dawson,Old Crow,Inuvik",
+          "TempCel": "12.699999999999999 C",
+          "SchedTime": "08:15 AM",
+          "SchedDate": "2022-07-24",
+          "RevisedTime": "08:15 AM",
+          "Status": "Departed",
+          "Gate": 3
+        },
+        {
+          "Carrier": "Air North",
+          "Flight": "4N549",
+          "CitiesIATA": "YVR,YLW",
+          "Cities": "Vancouver,Kelowna",
+          "TempCel": "18.399999999999999 C",
+          "SchedTime": "12:30 PM",
+          "SchedDate": "2022-07-24",
+          "RevisedTime": "12:30 PM",
+          "Status": "Departed",
+          "Gate": ""
+        },
+        {
+          "Carrier": "Air North",
+          "Flight": "4N762",
+          "CitiesIATA": "YEG",
+          "Cities": "Edmonton",
+          "TempCel": "15.800000000000001 C",
+          "SchedTime": "4:15 PM",
+          "SchedDate": "2022-07-24",
+          "RevisedTime": "4:15 PM",
+          "Status": "Departed",
+          "Gate": ""
+        },
+        {
+          "Carrier": "Air North",
+          "Flight": "4N261",
+          "CitiesIATA": "YDA",
+          "Cities": "Dawson",
+          "TempCel": "12.699999999999999 C",
+          "SchedTime": "4:30 PM",
+          "SchedDate": "2022-07-24",
+          "RevisedTime": "4:30 PM",
+          "Status": "Departed",
+          "Gate": 3
+        },
+        {
+          "Carrier": "Air North",
+          "Flight": "4N2563",
+          "CitiesIATA": "YVR",
+          "Cities": "Vancouver",
+          "TempCel": "18.399999999999999 C",
+          "SchedTime": "4:45 PM",
+          "SchedDate": "2022-07-24",
+          "RevisedTime": "4:45 PM",
+          "Status": "Departed",
+          "Gate": ""
+        },
+        {
+          "Carrier": "Air North",
+          "Flight": "4N271",
+          "CitiesIATA": "YDA",
+          "Cities": "Dawson",
+          "TempCel": "12.699999999999999 C",
+          "SchedTime": "5:50 PM",
+          "SchedDate": "2022-07-24",
+          "RevisedTime": "5:50 PM",
+          "Status": "Departed",
+          "Gate": ""
+        },
+        {
+          "Carrier": "Air Canada",
+          "Flight": "AC252",
+          "CitiesIATA": "YVR",
+          "Cities": "Vancouver",
+          "TempCel": "18.399999999999999 C",
+          "SchedTime": "7:15 PM",
+          "SchedDate": "2022-07-24",
+          "RevisedTime": "8:00 PM",
+          "Status": "Departed",
+          "Gate": 1
+        },
+        {
+          "Carrier": "Air Canada",
+          "Flight": "AC276",
+          "CitiesIATA": "YVR",
+          "Cities": "Vancouver",
+          "TempCel": "18.399999999999999 C",
+          "SchedTime": "06:00 AM",
+          "SchedDate": "2022-07-25",
+          "RevisedTime": "06:00 AM",
+          "Status": "On Time",
+          "Gate": 1
+        },
+        {
+          "Carrier": "Air North",
+          "Flight": "4N509",
+          "CitiesIATA": "YVR,YLW",
+          "Cities": "Vancouver,Kelowna",
+          "TempCel": "18.399999999999999 C",
+          "SchedTime": "06:15 AM",
+          "SchedDate": "2022-07-25",
+          "RevisedTime": "06:15 AM",
+          "Status": "On Time",
+          "Gate": ""
+        },
+        {
+          "Carrier": "Air North",
+          "Flight": "4N315",
+          "CitiesIATA": "YDA,YEV,YOC",
+          "Cities": "Dawson,Inuvik,Old Crow",
+          "TempCel": "12.699999999999999 C",
+          "SchedTime": "07:15 AM",
+          "SchedDate": "2022-07-25",
+          "RevisedTime": "07:15 AM",
+          "Status": "On Time",
+          "Gate": ""
+        },
+        {
+          "Carrier": "Air North",
+          "Flight": "4N541",
+          "CitiesIATA": "YVR,YYJ",
+          "Cities": "Vancouver,Victoria",
+          "TempCel": "18.399999999999999 C",
+          "SchedTime": "12:30 PM",
+          "SchedDate": "2022-07-25",
+          "RevisedTime": "12:30 PM",
+          "Status": "On Time",
+          "Gate": ""
+        },
+        {
+          "Carrier": "West Jet",
+          "Flight": "WS508",
+          "CitiesIATA": "YYC",
+          "Cities": "Calgary",
+          "TempCel": "18.800000000000001 C",
+          "SchedTime": "12:30 PM",
+          "SchedDate": "2022-07-25",
+          "RevisedTime": "12:30 PM",
+          "Status": "On Time",
+          "Gate": 4
+        },
+        {
+          "Carrier": "Air North",
+          "Flight": "4N761",
+          "CitiesIATA": "YYC",
+          "Cities": "Calgary",
+          "TempCel": "18.800000000000001 C",
+          "SchedTime": "3:10 PM",
+          "SchedDate": "2022-07-25",
+          "RevisedTime": "3:10 PM",
+          "Status": "On Time",
+          "Gate": ""
+        },
+        {
+          "Carrier": "Air North",
+          "Flight": "4N2563",
+          "CitiesIATA": "YVR",
+          "Cities": "Vancouver",
+          "TempCel": "18.399999999999999 C",
+          "SchedTime": "4:45 PM",
+          "SchedDate": "2022-07-25",
+          "RevisedTime": "4:45 PM",
+          "Status": "On Time",
+          "Gate": ""
+        },
+        {
+          "Carrier": "Air Canada",
+          "Flight": "AC8102",
+          "CitiesIATA": "YVR",
+          "Cities": "Vancouver",
+          "TempCel": "18.399999999999999 C",
+          "SchedTime": "7:00 PM",
+          "SchedDate": "2022-07-25",
+          "RevisedTime": "7:00 PM",
+          "Status": "On Time",
+          "Gate": 1
+        }
+      ]
+    }
+  }

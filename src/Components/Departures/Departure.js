@@ -7,61 +7,59 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import DepartureData from "./DepartureData.json";
 
+const DepartureFlightData = () => {
 
-const createDepartureData=(Airline,Flight,Cities,DepartureTime,Status)=>
- {
-  return { Airline,Flight,Cities,DepartureTime,Status };
-}
+  const departureArr = DepartureData && DepartureData.flights && DepartureData.flights.Departure
+    ? DepartureData.flights.Departure
+    : [];
 
-const DepartureData = [
-  createDepartureData('Air North','4N309','Old Crow','06:00 AM','On Time'),
-  createDepartureData('Air Canada','AC276','Vancouver','06:00 AM','On Time'),
-  createDepartureData('Air North','4N364','Inuvik','11:40 PM','Arrived'),
-  createDepartureData('Air North','WS507','Calgary','11:48 PM','Arrived'),
-  createDepartureData('Air Canada','AC8099','Vancouver','6:38 PM','Arrived'),
-  
-];
-
-
-
-
-const Departure = () => {
   return (
     <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 550 }} aria-label="simple table">
+      <Table  aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell>Airline</TableCell>
-            <TableCell align="left">Flights</TableCell>
-            <TableCell align="left">Cities</TableCell>
-            <TableCell align="left">Departure Time</TableCell>
-            <TableCell align="left">Status</TableCell>
+            <TableCell><strong>Airline</strong></TableCell>
+            <TableCell align="right"> <strong>Flights</strong></TableCell>
+            <TableCell align="right"><strong>Cities</strong></TableCell>
+            <TableCell align="right"><strong>DepartureTime</strong></TableCell>
+            <TableCell align="right"><strong>Status</strong></TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
-        {rows.map((row) => (
+
+
+       {departureArr.map((departure) => (
             <TableRow
-              key={row.Airline}
+             
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
               <TableCell component="th" scope="row">
-                {row.Airline}
+                {departure.Carrier}
               </TableCell>
-              <TableCell align="right">{row.Flight}</TableCell>
-              <TableCell align="right">{row.Cities}</TableCell>
-              <TableCell align="right">{row.ArrivalTime}</TableCell>
-              <TableCell align="right">{row.Status}</TableCell>
+              <TableCell align="right">{departure.Flight}</TableCell>
+              <TableCell align="right">{departure.Cities}</TableCell>
+              <TableCell align="right">{departure.SchedTime}</TableCell>
+              <TableCell align="right">{departure.Status}</TableCell>
             </TableRow>
           ))} 
-              
-          
-           
-        
+
+
+
+
         </TableBody>
       </Table>
     </TableContainer>
   )
 }
 
-export default Departure
+export default DepartureFlightData;
+
+
+
+
+
+
+
+

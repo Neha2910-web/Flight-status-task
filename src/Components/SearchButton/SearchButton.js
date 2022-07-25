@@ -3,15 +3,18 @@ import './SearchButton.css'
 import SearchIcon from '@mui/icons-material/Search';
 
 const SearchButton = () => {
+       
+       
   return (
     
-        <button className='button'>
-        <SearchIcon />
-        <span>
-Search...
+        <button className='button' >
+        <SearchIcon style={{paddingTop:5}}/>
+        <span style={{paddingTop:10 ,fontSize:9}}>
+Search arrivals by flight number , Airline or cities 
         </span>
 <div className='searchbutton'>
-Search
+        <span>Search Flight</span>
+ 
 </div>
         </button>
    

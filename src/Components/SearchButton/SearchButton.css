@@ -1,0 +1,18 @@
+.button {
+    display:flex;
+    padding:5px;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    background: white;
+
+}
+.searchbutton{
+
+    font-weight: 700;
+    line-height: 20px;
+    margin-left: 14px;
+    border: 1px solid rgb(224, 227, 231);
+    background-color: rgb(230, 184, 19);
+    padding:8px 9.4px;
+    border-radius: 20px;
+}
