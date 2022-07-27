@@ -7,18 +7,18 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
-import ArrivalData from "./ArrivalData.json";
+// import ArrivalData from "./ArrivalData.json";
 
 
 
 
-const ArrivalFligtsData = () => {
+const ArrivalFligtsData = ({data}) => {
 
 
-  const arrivalArr =
-    ArrivalData && ArrivalData.flights && ArrivalData.flights.Arrival
-      ? ArrivalData.flights.Arrival
-      : [];
+  // const arrivalArr =
+  //   ArrivalData && ArrivalData.flights && ArrivalData.flights.Arrival
+  //     ? ArrivalData.flights.Arrival
+  //     : [];
 
 
   return (<>
@@ -45,11 +45,11 @@ const ArrivalFligtsData = () => {
           </TableRow>
         </TableHead>
         <TableBody>
-          {arrivalArr.map((arrival) => {
+          {data.map((arrival,id) => {
 
             return (
               <TableRow 
-              key={arrival.id}
+              key={id}
                 sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
               >
                 <TableCell component="th" scope="row">

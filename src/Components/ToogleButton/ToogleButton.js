@@ -5,9 +5,8 @@ import Departure from "../Departures/Departure";
 import FlightLandIcon from "@mui/icons-material/FlightLand";
 import FlightTakeoffIcon from "@mui/icons-material/FlightTakeoff";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-const ToogleButton = () => {
+const ToogleButton = ({data}) => {
   const [show, setShow] = useState(true);
-
   return (
     <div style={{ marginTop: 100, background: "white" }}>
       <ToggleButton
@@ -46,7 +45,7 @@ const ToogleButton = () => {
       </span>
       <p style={{fontSize:8,marginLeft:12}}>updated july21,2022 at 11:00 pm </p>
 
-      {show ? <ArrivalFligtsData /> : <Departure />}
+      {show ? <ArrivalFligtsData data={data}/> : <Departure />}
     </div>
   );
 };
