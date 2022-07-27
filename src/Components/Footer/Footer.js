@@ -10,7 +10,7 @@ export default function Footer() {
  
 
   return (
-    <BottomNavigation sx={{ width: 720 }}style={{borderTop:"1px solid #e3dada"}}>
+    <BottomNavigation sx={{ width: 750 }}style={{borderTop:"1px solid #e3dada"}}>
    
         <BottomNavigationAction  icon={<RestoreIcon  style={{marginLeft:-350}} />} />
     <span style={{marginLeft:-250,padding:14}}>confirm the departure or arrival time of your flightwith your airline</span>

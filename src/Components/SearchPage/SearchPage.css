@@ -4,7 +4,7 @@
     border-top-right-radius: 24px;
     border-bottom-right-radius: 24px;
     background: white;
-
+width:450px;
 }
 .searchbutton{
 
@@ -15,4 +15,12 @@
     background-color: rgb(230, 184, 19);
     padding:8px 9.4px;
     border-radius: 20px;
+}
+.box {
+    border-radius: 10px;
+   
+    background: #c6bebe;
+    padding: 20px;
+    margin: auto;
+   width: 750px;
 }
