@@ -4,8 +4,8 @@ import ArrivalFligtsData from "../Arrival/Arrival";
 import Departure from "../Departures/Departure";
 import FlightLandIcon from "@mui/icons-material/FlightLand";
 import FlightTakeoffIcon from "@mui/icons-material/FlightTakeoff";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-const ToogleButton = ({data}) => {
+
+const ToogleButton = ({data,DepData}) => {
   const [show, setShow] = useState(true);
   return (
     <div style={{ marginTop: 100, background: "white" }}>
@@ -16,6 +16,7 @@ const ToogleButton = ({data}) => {
         marginLeft:14,
           color: "#07c7e4",
           fontWeight: "bold",
+          border:'none'
         }}
       >
         ARRIVALS
@@ -27,7 +28,8 @@ const ToogleButton = ({data}) => {
         color: "#07c7e4",
         fontWeight: "bold",
         padding: 4,
-        marginLeft:14
+        marginLeft:14,
+        border:'none'
       }}>
         DEPARTURES
         <FlightTakeoffIcon />
@@ -38,14 +40,15 @@ const ToogleButton = ({data}) => {
           fontWeight: "bolder",
           paddingTop: 13,
           fontSize: 11,
+          marginRight:21,
         }}
       >
         view all flights
-        <ArrowForwardIcon style={{ fontSize: "Small" }} />
+        
       </span>
       <p style={{fontSize:8,marginLeft:12}}>updated july21,2022 at 11:00 pm </p>
 
-      {show ? <ArrivalFligtsData data={data}/> : <Departure />}
+      {show ? <ArrivalFligtsData data={data}/> : <Departure data={DepData}/>}
     </div>
   );
 };

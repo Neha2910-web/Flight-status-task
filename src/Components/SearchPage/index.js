@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react'
 import './index.css'
 import ToogleButton from '../ToogleButton/ToogleButton';
 import Footer from '../Footer/Footer';
-import SearchButton from '../SearchButton/Searchbutton';
-import firstItem from '../Arrival/ArrivalData.json'
+import SearchIcon from "@mui/icons-material/Search";
+import Arrival from '../Arrival/ArrivalData.json'
+import Departure from '../Departures/DepartureData.json';
 const filterIt = (terms, arr) => {
     const words = terms.match(/\w+|"[^"]+"/g);
-    words.push(terms);
     return arr.filter((a) => {
         const v = Object.values(a);
         const f = JSON.stringify(v).toLowerCase();
@@ -14,47 +14,42 @@ const filterIt = (terms, arr) => {
     });
 };
 const SearchPage = () => {
-    // const [filteredValue, setFilteredValue] = useState('')
-    const arrivalArr =
-        firstItem && firstItem.flights && firstItem.flights.Arrival
-            ? firstItem.flights.Arrival
-            : [];
-    const [firstDataItem, setFirstDataItem] = useState([])
-    const [newValue, setNewValue] = useState([])
-    // console.log(...firstItem.flights.Arrival)
+    const [firstArr, setFirstArr] = useState([]);
+    const [Data, setData] = useState([]);
+    const[firstDep,setFirstDep]=useState([]);
+    const[depData,setDepData]=useState([])
     useEffect(() => {
-        const newItem = [...firstItem.flights.Arrival]
-        setFirstDataItem(newItem)
-        // console.log(newItem)
-    }, [])
+        const newArr = [...Arrival.flights.Arrival];
+        setFirstArr(newArr);
+        setData(newArr);
 
-    const filterFunction = () => {
-        const searchWord = document.getElementById('searchTxt').value
+        const newDepArr=[...Departure.flights.Departure];
+        setFirstDep(newDepArr);
+        setDepData(newDepArr);
+    }, []);
+    const filterList = () => {
+        const searchWord = document.getElementById("searchTxt").value
+
         if (searchWord) {
-            const update = filterIt(searchWord, firstDataItem)
+            const updatedNewArr = filterIt(searchWord, firstArr);
+            const updatedNewDepArr = filterIt(searchWord,firstDep);
+            setData(updatedNewArr);
+setDepData(updatedNewDepArr);
         } else {
-            setNewValue([...firstDataItem])
+            setData([...firstArr]);
+            setDepData([...firstDep]);
         }
-    }
-    // const filteredFlightList = (arrivalArr.filter((item) => {
-    //     // console.log("1",item.Flight.toLowerCase().includes(filteredValue));
-    //     return (item.Flight.toLowerCase().includes(filteredValue))
-    // }))
+    };
 
-    // const filterValueChangedHandle=(event)=>{
-    //     onFilterValueSelected(event.target.value)
-    //       }
+   
 
-
-    // const onFilterValueSelected = (filterValue) => {
-    //     console.log(filterValue);
-    //     setFilteredValue(filterValue)
-    // }
-    console.log(newValue)
     return (
 
         <div className="box">
+            
             <h2>Find Your Flight</h2>
+            <div className='button'>
+            <SearchIcon style={{ paddingTop: 5 }}     />
             <input
                 type="text"
                 placeholder="Search arrivals by flight number,Airline or cities"
@@ -63,16 +58,18 @@ const SearchPage = () => {
                     padding: 6,
                     border: "none"
                 }}
-                id=" searchTxt"
-            // onChange={filterValueChangedHandle}
+                id="searchTxt"
+            
             />
-            <button className="searchbutton" onClick={filterFunction}  >
+            <button className="searchbutton" onClick={filterList}  >
                 Search Flight
             </button>
-            {/* <SearchButton filterValueSelected={onFilterValueSelected}></SearchButton> */}
+            </div>
+            <div style={{marginTop:9}}>
             <span style={{ marginRight: 24, fontSize: 12 }}>Airports & Areodomes</span>
             <span style={{ fontSize: 12 }}>Bussiness</span>
-            <ToogleButton data={newValue}/>
+            </div>
+            <ToogleButton data={Data} DepData={depData}/>
             <Footer />
         </div>
 

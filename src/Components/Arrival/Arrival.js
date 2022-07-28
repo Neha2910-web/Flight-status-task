@@ -13,14 +13,7 @@ import Paper from "@mui/material/Paper";
 
 
 const ArrivalFligtsData = ({data}) => {
-
-
-  // const arrivalArr =
-  //   ArrivalData && ArrivalData.flights && ArrivalData.flights.Arrival
-  //     ? ArrivalData.flights.Arrival
-  //     : [];
-
-
+  
   return (<>
 
     <TableContainer component={Paper} >

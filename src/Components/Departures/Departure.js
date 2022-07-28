@@ -9,17 +9,12 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import DepartureData from "./DepartureData.json";
 
-const DepartureFlightData = () => {
-
-  const departureArr = DepartureData && DepartureData.flights && DepartureData.flights.Departure
-    ? DepartureData.flights.Departure
-    : [];
-
+const DepartureFlightData = ({data}) => {
   return (
     <TableContainer component={Paper}>
       <Table  aria-label="simple table">
         <TableHead>
-          <TableRow>
+          <TableRow >
             <TableCell><strong>Airline</strong></TableCell>
             <TableCell align="right"> <strong>Flights</strong></TableCell>
             <TableCell align="right"><strong>Cities</strong></TableCell>
@@ -30,9 +25,9 @@ const DepartureFlightData = () => {
         <TableBody>
 
 
-       {departureArr.map((departure) => (
+       {data.map((departure) => (
             <TableRow
-             
+            
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
               <TableCell component="th" scope="row">
