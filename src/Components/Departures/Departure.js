@@ -25,7 +25,8 @@ const DepartureFlightData = ({data}) => {
         <TableBody>
 
 
-       {data.map((departure) => (
+       { !data.length
+                ? <div style={{marginLeft:9,fontSize:20,fontWeight:"bold"}}>No Data Found.</div>:data.map((departure) => (
             <TableRow
             
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}

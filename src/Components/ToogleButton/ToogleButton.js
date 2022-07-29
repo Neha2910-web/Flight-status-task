@@ -46,7 +46,7 @@ const ToogleButton = ({data,DepData}) => {
         view all flights
         
       </span>
-      <p style={{fontSize:8,marginLeft:12}}>updated july21,2022 at 11:00 pm </p>
+      <p style={{fontSize:8,marginLeft:17}}>updated july21,2022 at 11:00 pm </p>
 
       {show ? <ArrivalFligtsData data={data}/> : <Departure data={DepData}/>}
     </div>

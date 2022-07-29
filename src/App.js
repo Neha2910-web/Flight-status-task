@@ -4,7 +4,7 @@ import SearchPage from './Components/SearchPage/index'
 const App = () => {
   return (
     <div>
-   {/* <SearchPage/> */}
+   <SearchPage/>
     </div>
   )
 }

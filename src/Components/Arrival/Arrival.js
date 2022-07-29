@@ -38,7 +38,8 @@ const ArrivalFligtsData = ({data}) => {
           </TableRow>
         </TableHead>
         <TableBody>
-          {data.map((arrival,id) => {
+          { !data.length
+                ? <div style={{marginLeft:9,fontSize:20,fontWeight:"bold"}}>No Data Found.</div>:data.map((arrival,id) => {
 
             return (
               <TableRow 

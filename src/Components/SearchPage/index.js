@@ -18,6 +18,7 @@ const SearchPage = () => {
     const [Data, setData] = useState([]);
     const[firstDep,setFirstDep]=useState([]);
     const[depData,setDepData]=useState([])
+    
     useEffect(() => {
         const newArr = [...Arrival.flights.Arrival];
         setFirstArr(newArr);
@@ -26,6 +27,7 @@ const SearchPage = () => {
         const newDepArr=[...Departure.flights.Departure];
         setFirstDep(newDepArr);
         setDepData(newDepArr);
+       
     }, []);
     const filterList = () => {
         const searchWord = document.getElementById("searchTxt").value
@@ -38,10 +40,9 @@ setDepData(updatedNewDepArr);
         } else {
             setData([...firstArr]);
             setDepData([...firstDep]);
-        }
-    };
+        };
+    }
 
-   
 
     return (
 
@@ -59,11 +60,9 @@ setDepData(updatedNewDepArr);
                     border: "none"
                 }}
                 id="searchTxt"
-            
+            onChange={filterList}
             />
-            <button className="searchbutton" onClick={filterList}  >
-                Search Flight
-            </button>
+           
             </div>
             <div style={{marginTop:9}}>
             <span style={{ marginRight: 24, fontSize: 12 }}>Airports & Areodomes</span>
@@ -76,4 +75,5 @@ setDepData(updatedNewDepArr);
     )
 }
 
-export default SearchPage
+export default SearchPage;
+
